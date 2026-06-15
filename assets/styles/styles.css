@@ -1,0 +1,83 @@
+
+}/* RESET GENERAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Organiza las 3 secciones verticalmente */
+}
+
+/* SECCIÓN 1: BARRA SUPERIOR */
+.header-nav {
+    display: flex;
+    justify-content: flex-end; /* Empuja el menú a la derecha */
+    padding: 10px 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    margin-left: 15px;
+}
+
+.header-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.header-nav img {
+    width: 24px; /* Tamaño estándar de los iconos de Google */
+    height: auto;
+    cursor: pointer;
+}
+
+.header-nav .profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Hace la foto de perfil redonda */
+}
+
+/* SECCIÓN 2: CONTENIDO CENTRAL */
+.main-content {
+    flex: 1; /* Ocupa todo el espacio disponible empujando el footer hacia abajo */
+}
+
+/* SECCIÓN 3: PIE DE PÁGINA (FOOTER) */
+.google-footer {
+    display: flex;
+    justify-content: space-between; /* Separa los bloques a los extremos */
+    align-items: center;
+    background-color: #f2f2f2;      /* Gris claro de Google */
+    padding: 15px 30px;
+    border-top: 1px solid #e4e4e4;
+    font-size: 14px;
+}
+
+.google-footer a {
+    color: #70757a;                 /* Gris de los textos de Google */
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.google-footer .footer-left a:last-child,
+.google-footer .footer-right a:last-child {
+    margin-right: 0;                /* Quita margen al último elemento */
+}
+
+.google-footer a:hover {
+    text-decoration: underline;
+}
+
